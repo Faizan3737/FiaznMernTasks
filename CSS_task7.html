@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Registration</title>
+    <style>
+      body {
+        background-color: rgba(175, 26, 85, 255);
+        color: aliceblue;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        font-size: large;
+        background-color: rgba(128, 21, 63, 255);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 400px;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+
+      table {
+        width: 100%;
+      }
+
+      td {
+        padding: 10px 0;
+      }
+
+      label {
+        display: block;
+        font-weight: bold;
+      }
+
+      input[type="text"],
+      input[type="password"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 8px;
+        margin-top: 4px;
+        margin-bottom: 12px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      input[type="radio"] {
+        margin-right: 5px;
+      }
+
+      button#reg {
+        width: 100%;
+        padding: 10px;
+        background-color: #18b618;
+        color: white;
+        border: none;
+        border-radius: 7px;
+        cursor: pointer;
+      }
+
+      button#reg:hover {
+        background-color: #128e12;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="action.php">
+        <table>
+          <tr>
+            <td><label for="username">Name:</label></td>
+            <td>
+              <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Name"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="email">Email:</label></td>
+            <td>
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="password">Password:</label></td>
+            <td>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Password"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="phonenumber">Contact :</label></td>
+            <td>
+              <input
+                type="text"
+                id="phonenumber"
+                name="phonenumber"
+                placeholder="Number"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Gender</td>
+            <td>
+              <input
+                type="radio"
+                name="gender"
+                id="male"
+                value="Male"
+                required
+              />
+              <label for="male">Male</label>
+              <input
+                type="radio"
+                name="gender"
+                id="female"
+                value="Female"
+                required
+              />
+              <label for="female">Female</label>
+              <input
+                type="radio"
+                name="gender"
+                id="other"
+                value="Other"
+                required
+              />
+              <label for="other">Other</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="lang">Languages:</label></td>
+            <td>
+              <select name="lang" id="lang" required>
+                <option value="">Select Language</option>
+                <option value="English">English</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Telugu">Telugu</option>
+                <option value="Tamil">Tamil</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="zipcode">Zip code:</label></td>
+            <td>
+              <input
+                type="text"
+                id="zipcode"
+                name="zipcode"
+                placeholder="Zipcode"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="about">About:</label></td>
+            <td>
+              <textarea
+                name="about"
+                id="about"
+                cols="30"
+                rows="4"
+                placeholder="Write about yourself"
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <button id="reg" type="submit">Register</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company Information</title>
+    <style>
+      /* Global styles */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Table styles */
+      table {
+        margin: 35px auto; /* Center the table horizontally */
+        width: 100%;
+        border-collapse: collapse;
+        border: 1px solid grey;
+      }
+
+      th,
+      td {
+        padding: 10px;
+        text-align: left;
+      }
+
+      th {
+        background-color: rgb(9, 189, 111);
+        color: white;
+      }
+
+      tr:nth-child(odd) {
+        background-color: lightgray;
+      }
+
+      /* Adjust column widths */
+      th:first-child,
+      td:first-child {
+        min-width: 200px;
+      }
+
+      th:nth-child(2),
+      td:nth-child(2) {
+        min-width: 200px;
+      }
+
+      /* Responsive styles for smaller screens */
+      @media (max-width: 768px) {
+        th,
+        td {
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Company</th>
+          <th>Contact</th>
+          <th>Country</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Alfred Futterkiste</td>
+          <td>Maria Anders</td>
+          <td>Germany</td>
+        </tr>
+        <tr>
+          <td>Berglunds snabbkop</td>
+          <td>Christina Berglund</td>
+          <td>Sweden</td>
+        </tr>
+        <tr>
+          <td>Centro commercial moctezuma</td>
+          <td>Fransisco Chang</td>
+          <td>Mexico</td>
+        </tr>
+        <tr>
+          <td>Ernst Handel</td>
+          <td>Roland Mendel</td>
+          <td>Austria</td>
+        </tr>
+        <tr>
+          <td>Island Trading</td>
+          <td>Helen Bennett</td>
+          <td>UK</td>
+        </tr>
+        <tr>
+          <td>Konglich Essen</td>
+          <td>Philip Carmer</td>
+          <td>Germany</td>
+        </tr>
+        <tr>
+          <td>Laughing Bachhus Winecellars</td>
+          <td>Yoshi Tannamuri</td>
+          <td>Canada</td>
+        </tr>
+        <tr>
+          <td>Magazzini Alimentari Riuniti</td>
+          <td>Giovanni Roveli</td>
+          <td>Italy</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

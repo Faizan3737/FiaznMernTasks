@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styled Page</title>
+    <style>
+      /* Global styles */
+      body {
+        font-family: "Times New Roman", Times, serif;
+        background-color: rgb(187, 187, 3);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      /* Navigation sidebar styles */
+      .container {
+        width: 200px;
+        background-color: aliceblue;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .container li {
+        width: 100%;
+        padding: 10px;
+        border-right: 5px solid black;
+        transition: background-color 0.2s;
+      }
+
+      .container li:hover {
+        background-color: grey;
+        color: white;
+      }
+
+      .container li a {
+        color: blue;
+        text-decoration: none;
+      }
+
+      /* Main content styles */
+      .container2 {
+        padding: 20px;
+        color: rgb(126, 15, 126);
+      }
+
+      .container2 h1 {
+        font-size: 24px;
+        margin: 0;
+      }
+
+      .container2 p {
+        font-size: 18px;
+        margin: 10px 0;
+      }
+
+      .container2 hr {
+        background-color: rgb(126, 15, 126);
+        height: 1px;
+        border: none;
+        margin: 20px 0;
+      }
+
+      #date {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="container">
+      <li><a href="#">Home page</a></li>
+      <li><a href="#">Musings</a></li>
+      <li><a href="#">My town</a></li>
+      <li><a href="#">Links</a></li>
+    </ul>
+    <div class="container2">
+      <h1>My First Styled Page</h1>
+      <p>Welcome to my styled page.</p>
+      <p>
+        It lacks images, but at least it has style. And it has links, even if
+        they don't go anywhere...
+      </p>
+      <p>There should be more here, but I don't know what yet.</p>
+      <hr />
+      <p id="date">Made 8 September 2023 by Rahebar.</p>
+    </div>
+  </body>
+</html>
